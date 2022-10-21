@@ -82,9 +82,9 @@ export default async function run(
       notice('Deployment failed! ❌')
     } else if (status === Status.SUCCESS) {
       info('Completed deployment successfully! ✅')
-    } else {
-      info('There is nothing to commit. Exiting early… 📭')
-    }
+    } //else {
+      //info('There is nothing to commit. Exiting early… 📭')
+    //}
 
     exportVariable('deployment_status', status)
     setOutput('deployment-status', status)
